@@ -17,7 +17,7 @@ const initialState = {
     date: formatDate(new Date()),
 }
 
-const From = () => {
+const Form = () => {
     const classes = useStyles();
     const [formData, setFormData] = useState(initialState);
     const { addTransaction } = useContext(ExpenseTrackerContext);
@@ -120,4 +120,4 @@ const From = () => {
     )
 }
 
-export default From
+export default Form

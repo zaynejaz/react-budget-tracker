@@ -7,7 +7,7 @@ import useStyles from './styles';
 import Form from './Form/Form';
 import List from './List/List';
 
-import InfoCard from '../InfoCard';
+// import InfoCard from '../InfoCard';
 
 const Main = () => {
     const classes = useStyles();
@@ -45,7 +45,7 @@ const Main = () => {
                     <br />
                 </Typography>
                 <Typography variant="subtitle1" style={{ lineHeight: '1.5em', marginTop: '10px', textAlign: 'center' }}>
-                    <span className={Number(balance) == 0 ? classes.headerNeutral : classes.headerActive, classes.headerName} >Balance</span>
+                    <span className={Number(balance) === 0 ? classes.headerNeutral : classes.headerActive, classes.headerName} >Balance</span>
                     {/* <InfoCard /> */}
                 </Typography>
                 <Divider className={Number(balance) > 0 ? classes.dividerPositive : Number(balance) < 0 ? classes.dividerNegative : classes.dividerNeutral} />
